@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: 5em auto;
+    font-size: 14px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.social-proof{
+    padding: 60px;
+}
+
+.recommend{
+    display: grid;
+    grid-template-columns: 700px 550px;
+    width: 100%;
+}
+.services h1{
+    padding: 20px 0;
+    padding-right: 160px;
+    font-size: 55px;
+    font-weight: 800;
+    color: hsl(300, 43%, 22%);
+    line-height: 0.9;
+}
+.services p{
+    padding-bottom: 50px;
+    padding-right: 130px;
+    font-size: 23px;
+    color: hsl(303, 10%, 53%);
+}
+
+.rates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.rates p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 800;
+}
+.review,
+.report-guru,
+.best-tech{
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    border: 1px solid hsl(300, 24%, 96%);
+    border-radius: 5px;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    background-color: hsl(300, 24%, 96%);
+}
+.review{
+    padding: 20px 0;
+    margin-right: 10em;
+}
+.report-guru{
+    margin-left: 30px;
+    margin-right: 7em;
+}
+.best-tech{
+    margin-left: 60px;
+    margin-right: 4em;
+}
+.review:hover,
+.report-guru:hover,
+.best-tech:hover{
+    background-color: hsl(300, 7%, 81%);
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+    width: 100%;
+    padding-right: 80px;
+}
+.images .img-1,
+.images .img-2,
+.images .img-3{
+    background-color: hsl(300, 43%, 22%);
+    padding: 35px 45px;
+    border: 1px solid hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+.images .img-2{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.images .img-3{
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+.images .smith{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0 20px;
+    padding-bottom: 20px;
+}
+.images .smith img{
+    width: 35px;
+    border-radius: 50%;
+}
+.images .smith > p{
+    color: hsl(300, 24%, 96%);
+}
+.images .smith > p span{
+    display: block;
+    color: hsl(333, 80%, 67%);
+}
+
+.images .robert{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0 20px;
+    padding-bottom: 20px;
+}
+.images .robert img{
+    width: 35px;
+    border-radius: 50%;
+}
+.images .robert > p{
+    color: hsl(300, 24%, 96%);
+}
+.images .robert > p span{
+    display: block;
+    color: hsl(333, 80%, 67%);
+}
+
+.images .anne{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0 20px;
+    padding-bottom: 20px;
+}
+.images .anne img{
+    width: 35px;
+    border-radius: 50%;
+}
+.images .anne > p{
+    color: hsl(300, 24%, 96%);
+}
+.images .anne > p span{
+    display: block;
+    color: hsl(333, 80%, 67%);
+}
+
+.images .img-1 > p,
+.images .img-2 > p,
+.images .img-3 > p{
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.7;
+}
+
+.attribution {
+    margin-top: 40px;
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 1400px) {
+    body{
+        max-width: 1200px;
+    }
+    .social-proof{
+        padding: 0;
+    }
+    .images{
+        padding-right: 60px;
+    }
+  }
+
+  @media screen and (max-width: 1275px) {
+    .recommend{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .services h1{
+        font-size: 40px;
+    }
+    .services p{
+        font-size: 18px;
+    }
+    .images .img-1,
+    .images .img-2,
+    .images .img-3{
+        padding: 35px;
+    }
+    .images .img-1 > p,
+    .images .img-2 > p,
+    .images .img-3 > p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+  }
+
+  @media screen and (max-width: 965px) {
+    .review{
+        padding: 20px 0;
+        margin-right: 0;
+    }
+    .report-guru{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .best-tech{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .images{
+        padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .social-proof{
+        max-width: 500px;
+    }
+    .recommend{
+        grid-template-columns: 1fr;
+    }
+    .services h1{
+        margin-bottom: 20px;
+        padding-right: 0;
+        font-size: 50px;
+        line-height: 1;
+        text-align: center;
+    }
+    .services p{
+        padding-right: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .images{
+        grid-template-columns: 1fr;
+        gap: 0 20px;
+    }
+    .rates {
+        margin-bottom: 25px;
+    }
+    .review, 
+    .report-guru, 
+    .best-tech{
+        gap: 0 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .attribution {
+        margin-top: 70px;
+      }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .social-proof{
+        max-width: 320px;
+    }
+    .services h1{
+        padding-bottom: 35px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .services p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .review, 
+    .report-guru, 
+    .best-tech{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 7px 0;
+    }
+    .images .img-1, 
+    .images .img-2, 
+    .images .img-3{
+        padding: 30px 25px;
+        max-height: 30em;
+        margin-top: 20px;
+    }
+    .images .img-3{
+        margin-top: 40px;
+    }
+    .images .img-1 > p,
+    .images .img-2 > p,
+    .images .img-3 > p{
+        font-size: 16px;
+        padding-top: 15px;
+        line-height: 1.5;
+    }
+  }
